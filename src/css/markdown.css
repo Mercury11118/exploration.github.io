@@ -1,0 +1,100 @@
+#markdown>img {
+    max-width: 90%;
+}
+
+#markdown>*:not(hr) {
+    display: inline;
+}
+
+#markdown>a>* {
+    display: inline;
+}
+
+#markdown {
+    min-width: 85%; 
+}
+
+#markdown>*>p {
+    max-width: fit-content;
+    display: inline-block;
+    white-space: pre;
+}
+
+#markdown>h1,#markdown>h2,#markdown>h3,#markdown>h4,#markdown>h5,#markdown>h6 {
+    display: block;
+
+    text-decoration: underline;
+    text-decoration-color: var(--link-color);
+
+    padding-top: 50px;
+}
+
+#anchorList{
+    padding: 16px;
+    padding-left:5px;
+
+    display: grid;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--main-color);
+    border-radius: 16px;
+
+    background: linear-gradient(var(--main-color-transparent), var(--background-color-transparent));
+
+    position: fixed;
+
+    left: 2vw;
+    top: 20vh;
+    bottom: 20vh;
+
+    backdrop-filter: blur(10px);
+
+    min-height: 10vh;
+    
+    width: 10vw;
+    
+    opacity: 1;
+    scale: 1;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    transition: 1s;
+
+    z-index: 998;
+}
+
+#anchorList:hover,
+#anchorList:active
+{
+    z-index: 1001;
+}
+
+#anchorList>a{
+    transition: 0.5s;
+    font-size: small;
+    padding-bottom: 12px;
+}
+
+@media screen and (max-width: 1280px) {
+    #anchorList{
+        padding-right: 50px;
+
+        left: 2.5vw;
+
+        top: 75vh;
+        bottom: 5vh;
+
+        width: 75vw;
+    }
+    #anchorList>a {
+        padding:5px;
+        pointer-events: none;
+        max-width: fit-content;
+    }
+    #anchorList:hover>a,
+    #anchorList:active>a{
+        pointer-events: all !important;
+    }
+}

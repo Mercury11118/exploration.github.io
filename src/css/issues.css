@@ -1,0 +1,47 @@
+div.div {
+    display: inline-block;
+    margin: 60px;
+    max-width: 70vw;
+    max-height: 70vh;
+    overflow-x: auto;
+}
+
+img.profile {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 25px;
+}
+
+img.logoissue {
+    max-width: 50px;
+    max-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+a.issuelink {
+    padding-right: 16px;
+    display: block;
+}
+
+a.username {
+    padding-right: 16px;
+    display: block;
+}
+
+p.date {
+    padding-right: 16px;
+    display: inline;
+}
+
+p.repo {
+    padding-right: 16px;
+    display: inline;
+}
+
+p.labelissue {
+    display: inline;
+    padding-right: 16px;
+    font-size: 32px;
+}

@@ -1,0 +1,49 @@
+#anchor>a>button>img,
+#editAnchor>img,
+#editAnchor>a>button>img,
+#anchor>button>img {
+    width: 25px;
+    height: 25px;
+
+    margin: 5px;
+}
+
+#anchor {
+    position: fixed;
+    z-index: 1000;
+
+    display: grid;
+    max-width: min-content;
+
+    padding-top: 10px;
+}
+
+#anchor>a>button,
+#editAnchor>button,
+#editAnchor>a>button,
+#anchor>button {
+    border-radius: 10px;
+    margin: 5px;
+    background-color: var(--main-color-transparent);
+}
+
+#editAnchor{
+    margin-top:25px;
+}
+
+#scroll-up {
+    position: fixed;
+    bottom: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    #anchor {
+        right: 0vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #anchor {
+        right: 5vw;
+    }
+}
